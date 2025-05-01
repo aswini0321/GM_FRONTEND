@@ -1,0 +1,220 @@
+
+.gp-logo-container {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 1000;
+}
+
+.gp-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; /* Makes it a circle */
+  border: 2px solid white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
+.home-container {
+  background-color:#0d1b2a ; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 4rem 2rem;
+  color: white; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2
+{
+  color:rgb(3, 60, 3);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.main-heading {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #d0e7ff; 
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 4rem; 
+}
+
+@media (min-width: 640px) {
+  .categories-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .categories-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.category-card {
+  background-color: #6ec56e; 
+  color: green;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+  font-size: 6.8rem;
+  margin-bottom: 1rem;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.category-description {
+  font-size: 1rem;
+  color: rgb(253, 245, 250); 
+}
+
+.preview-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #10aac9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.preview-button:hover {
+  background-color: #4594a0;
+}
+
+
+
+.login-box {
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #ddf493;
+  border: 1px solid #ccc;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.login-box input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 8px;
+  border: 1px solid #378d90;
+  border-radius: 5px;
+}
+
+.login-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.info-extension {
+  margin-top: 10px;
+  padding: 40px 20px;
+  background: #bfce75;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.info-image {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-image img {
+  width: 1150px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  filter: blur(2px); 
+}
+.info-image img:hover {
+  filter: blur(0);
+}
+
+
+/* Footer Styling */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0; 
+  text-align: center; 
+  font-size: 14px; 
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); 
+  margin-top: 40px; 
+}
+
+.footer p {
+  margin: 0; /* Remove default margin around the paragraph */
+}
+
+.footer a {
+  color: #ffd700; /* Golden color for links */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Make links bold */
+  transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+.footer a:hover {
+  color: #f0c200; /* Lighter golden color when hovering */
+}
+
