@@ -59,13 +59,14 @@ input[type="text"],
 textarea,
 select,
 input[type="file"] {
+  width: 100%;
+  box-sizing: border-box;
   padding: 10px;
   font-size: 1em;
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color:lightgrey;
 }
-
 textarea {
   resize: vertical;
   min-height: 100px;
@@ -114,3 +115,40 @@ button:hover {
     font-size: 1em;
   }
 }
+
+@media (max-width: 600px) {
+  /* Center the form on mobile screens */
+  .form-container {
+    width: 90%;  /* Make it more responsive */
+    padding: 15px;
+    margin: 20px auto;  /* Add margin for better spacing */
+  }
+
+  /* Adjust form layout */
+  form {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  /* Button size and font */
+  button {
+    padding: 10px;
+    font-size: 1em;
+  }
+
+  /* Header adjustment */
+  h1 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  /* Style for back-home button if needed */
+  .back-home-btn {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+}
+
