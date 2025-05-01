@@ -66,7 +66,7 @@ const CForm = () => {
         underWhom: formData.underWhom
       },
       encroachmentDetails: {
-        identified: formData.encroachment ? true : false,
+        identified: formData.encroachment,
         actionTaken: formData.action
       },
       photos: {

@@ -64,7 +64,7 @@ const AForm = () => {
         layoutNo: formData.layoutNo
       },
       encroachmentDetails: {
-        identified: formData.encroachment ? true : false,
+        identified: formData.encroachment,
         actionTaken: formData.action
       },
       photos: {

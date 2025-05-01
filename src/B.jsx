@@ -67,7 +67,7 @@ const BForm = () => {
         byWhom: formData.byWhom
       },
       encroachmentDetails: {
-        identified: formData.encroachment ? true : false,
+        identified: formData.encroachment,
         actionTaken: formData.action
       },
       photos: {

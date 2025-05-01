@@ -204,17 +204,75 @@ h2
 }
 
 .footer p {
-  margin: 0; /* Remove default margin around the paragraph */
+  margin: 0; 
 }
 
 .footer a {
-  color: #ffd700; /* Golden color for links */
-  text-decoration: none; /* Remove underline from links */
-  font-weight: bold; /* Make links bold */
-  transition: color 0.3s ease; /* Smooth transition for link color */
+  color: #ffd700; 
+  text-decoration: none;
+  font-weight: bold; 
+  transition: color 0.3s ease; 
 }
 
 .footer a:hover {
-  color: #f0c200; /* Lighter golden color when hovering */
+  color: #f0c200; 
 }
+
+
+@media (max-width: 600px) {
+  .gp-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .main-heading {
+    font-size: 1.6rem;
+    padding: 0 10px;
+  }
+
+  .description {
+    font-size: 1rem;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .preview-button {
+    position: static;
+    width: 90%;
+    margin: 1rem auto;
+    display: block;
+    font-size: 1rem;
+  }
+
+  .login-box {
+    width: 90%;
+  }
+
+  .info-image img {
+    width: 100%;
+    height: auto;
+    filter: blur(1px);
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .category-card {
+    padding: 1.5rem;
+  }
+
+  .icon {
+    font-size: 4rem;
+  }
+
+  .footer {
+    font-size: 13px;
+    padding: 15px;
+  }
+}
+
+
 
